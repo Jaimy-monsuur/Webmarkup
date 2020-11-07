@@ -184,7 +184,7 @@ td {
 border: 1px solid #000;}
 td:first-child {
 background-color: #FFFF00;}
-#Black td {
+#Black th {
 	background-color: #000;
 color:#FFFFFF;}
 td:nth-child(even) {

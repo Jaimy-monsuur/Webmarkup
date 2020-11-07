@@ -1,0 +1,532 @@
+
+/*op alle pages(onderdelen zijn van boven naar beneden)*/
+html, body {
+	width: auto;
+	height: auto;
+margin: 0;}
+header{
+	text-align: center;
+}
+#toggle, .navlabel {
+visibility:hidden;}
+.nav {
+	height: 50px;
+}
+.nav ul {
+	font-size: 20px;
+	list-style-type: none;
+	
+}
+.nav li {
+	float: left;
+	width: 25% ;
+	text-align: center;
+}
+.nav a {
+	text-decoration: none;
+	text-align: center;
+}
+.nav a:hover {
+	color: #FF0000;
+}
+
+.Active{
+	color: #FF0000;
+}
+video {
+	right: 0;
+	bottom: 0;
+	width: 100%;
+	height: auto;
+}
+section section article p, section section article h3 {
+	width: 60%;
+	word-spacing: 2px;
+	text-indent: 2px;
+}
+
+section article p, section article h3 {
+	width: 70%;
+	word-spacing: 2px;
+	text-indent: 2px;
+	padding-top: 10px;
+	padding-left: 20px;
+}
+.Aanbevolen {
+grid-area: text;}
+
+.footer {
+	height: 60px;
+	border: 1px solid #000;
+}
+
+footer .cookiestatement{
+	height: 60px;
+	width: 200px;
+	text-align: center;
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	opacity: 50%;
+	background-color: #FA0;
+	z-index: 9999;
+color:#FFF;}
+
+/*home page*/
+#flexboc_container{
+	display: flex;
+	flex-wrap: wrap;	
+}
+.section_product {
+	display: flex;
+	flex-direction: column;
+	width: 60%;
+	float: left;
+} 
+.figure {
+	float: right;
+}
+
+#article_home1{
+	flex-grow: 0;
+	flex-basis: 100%;
+}
+#article_home2{
+	flex-grow: 0;
+	flex-basis: 100%;
+}
+#article_home3{
+	flex-grow: 0;
+	flex-basis: 100%;	
+}
+.article_image {
+	float: right;
+	height: auto;
+	width: 250px;
+	margin-top: -100px;
+}
+section header{
+	text-align: left;
+}
+.5redenen {
+	width: 30%;
+	float: left;
+	
+}
+
+/*howsolarworks.html*/
+#grid_container_page2{
+	display: grid;
+	grid-template-columns: auto auto auto;
+	grid-gap: 10px;
+	grid-template-areas:
+	"article2 article1 article3"
+	"article2 article1 article3"
+	"article5 article1 article3"
+	"article5 article1 article4"
+	"article5 article1 article4"
+	"article5 article1 article4"
+	"article5 article6 article6"
+	"text . ."
+	"product1page2 product2page2 product3page2"
+	"product1page2 product2page2 product3page2"
+}
+
+.article2 {
+	border-radius: 10px;
+	background-color: #d7d7d7;
+grid-area: article2; }	
+.article1 { 
+	border-radius: 10px;
+	background-color: #d7d7d7;
+grid-area: article1; }	
+.article3 { 
+	border-radius: 10px;
+	background-color: #d7d7d7;
+grid-area: article3; }	
+.article4 { 
+	border-radius: 10px;
+	background-color: #d7d7d7;
+grid-area: article4; }	
+.article5 { 
+	border-radius: 10px;
+	background-color: #d7d7d7;
+grid-area: article5; }	
+.article6 { 
+	border-radius: 10px;
+	background-color: #d7d7d7;
+grid-area: article6; }	
+
+.product1page2 { 
+grid-area: product1page2; }	
+.product2page2 { 
+grid-area: product2page2; }
+.product3page2 { 
+grid-area: product3page2; }
+
+.product1page2 img {
+	width: auto;
+height: 250px;}
+.product2page2 img {
+	width: auto;
+height: 250px;}
+.product3page2 img {
+	width: auto;
+height: 250px;}
+
+/*eusolar.html*/
+table {
+	font-size: 1em;
+border: 1px solid #000;}
+td {
+	padding: 6px;
+	margin: 4px;
+border: 1px solid #000;}
+td:first-child {
+background-color: #FFFF00;}
+#Black td {
+	background-color: #000;
+color:#FFFFFF;}
+td:nth-child(even) {
+background-color: #D9E1F2;}
+#grid_container_page3{
+	display: grid;
+	grid-template-columns: auto auto auto;
+	grid-gap: 10px;
+	grid-template-areas:
+	"table table . text"
+	"table table . product1page3"
+	"table table . product2page3"
+	"table table . product3page3"
+"copy . . ."}
+
+#infoEU { 
+	grid-area: info; 
+text-align: center;}
+
+#table { 
+grid-area: table; }
+
+#copy { 
+grid-area: copy; }
+.product1page3 { 
+grid-area: product1page3; }	
+.product2page3 { 
+grid-area: product2page3; }
+.product3page3 { 
+grid-area: product3page3; }
+
+.product1page3 img {
+	width: auto;
+height: 250px;}
+.product2page3 img {
+	width: auto;
+height: 250px;}
+.product3page3 img {
+	width: auto;
+height: 250px;}
+
+/*contact.html*/	
+
+input[type=text],input[type=email], textarea {
+	width: 100%;
+	padding: 20px;
+	border-radius: 10px;
+	box-sizing: border-box;
+	resize: vertical
+}
+
+#grid_container_page4{
+	display: grid;
+	grid-template-columns: auto auto auto;
+	grid-gap: 10px;
+	grid-template-areas:
+	"form form . text"
+	"form form . product1page4"
+	"form form . product2page4"
+	"form form . product3page4"
+}
+.form {
+	grid-area: form; 	
+}
+form, legend {
+	background-color: #d7d7d7;
+	border-radius: 10px;
+}
+
+.product1page4 { 
+grid-area: product1page4; }	
+.product2page4 { 
+grid-area: product2page4; }
+.product3page4 { 
+grid-area: product3page4; }
+
+.product1page4 img {
+	width: auto;
+height: 250px;}
+.product2page4 img {
+	width: auto;
+height: 250px;}
+.product3page4 img {
+	width: auto;
+height: 250px;}
+
+@media only screen and (max-width: 1279px) and (min-width: 481px) {
+	
+	/*contact.html*/	
+	#grid_container_page4{
+		display: grid;
+		grid-template-columns: auto auto;
+		grid-gap: 10px;
+		grid-template-areas:
+		"form  text"
+		"form  product1page4"
+		"form  product2page4"
+		"form  product3page4"
+		
+	}	
+	
+	
+	/*eusolar.html*/	
+	#grid_container_page3{
+		display: grid;
+		grid-template-columns: auto auto;
+		grid-gap: 10px;
+		grid-template-areas:
+		"table table "
+		"table table "
+		"table table "
+		"table table "
+		"copy . "
+		"text . "
+	"product2page3 product3page3"}	
+	
+	.tablet { 
+	display: none;}	
+	
+	.product1page3 { 
+	display: none;}	
+	
+	/*howsolarworks.html*/
+	#grid_container_page2{
+		display: grid;
+		grid-template-columns: auto auto;
+		grid-gap: 10px;
+		grid-template-areas:
+		"article1 article2"
+		"article1 article2"
+		"article3 article2"
+		"article3 article5"
+		"article3 article5"
+		"article3 article5"
+		"article6 article6"
+		"article6 article6"
+		"text . "
+		"product1page2 product2page2"
+		"product1page2 product2page2"	
+	}
+	
+	.article4 { 
+	display: none;}	
+	.product3page2 { 
+	display: none;}	
+	
+	/*home page*/ 
+	
+    section  section article p {
+        max-width: 100%;
+        width: 90%;
+        vertical-align: middle;
+	}
+    section section aside p {
+        max-width: 100%;
+        width: 70%;
+	}
+	.figure {
+        float: left;
+        width: 50%;
+	}
+	.section_product {
+        order: 2;
+        padding-left: 100px;
+	} 
+	
+	#article_home1{
+		order: 2;
+	}
+	#article_home2{
+		order: 1;
+	}
+	#article_home3{
+		order: 0;	
+	}
+	.article_image {
+        float: left;
+        margin-top: 0px;
+        height: 200px;
+        width: 250px;		
+	}
+	video {
+        order: 1;
+	}
+	.5redenen {
+        order: 0;
+        width: 100%;
+        padding-left: 100px;
+        flex-grow: 1;
+        flex-shrink: 1;	
+	}
+	
+}
+
+@media only screen and (max-width: 480px) {
+	.navlabel {
+		text-align: right;
+		padding: 20px;
+		font-size: 50px;
+		vertical-align: ;
+		
+	}
+	.navlabel {
+	visibility:visible;}
+	
+	#logo{
+		width: 200px;
+		text-align: center;
+	}
+	label {
+		
+        display: block;
+        cursor: pointer;
+	}
+    .nav {
+        text-align: center;
+        display: none;
+		background-color: #FFFFFF;
+	}
+    .nav a {
+        display: block;
+        hight: 50px;
+	}
+    .nav li {
+        float: unset;
+        width: unset;
+		background-color: #FFFFFF;
+	}
+	.nav ul {
+		background-color: #FFFFFF;
+		border: 1px solid #000;
+		padding: 20px;
+	}
+	
+	#toggle{
+		display: none;	
+	}
+	
+    #toggle:checked + .nav {
+        display: block;
+        position: relative;
+	}
+	
+	/*contact.html*/	
+	#grid_container_page4{
+		display: grid;
+		grid-template-columns: auto auto;
+		grid-gap: 10px;
+		grid-template-areas:
+		"form form"
+		"form form"
+		"form form"
+		"form form"
+		"text text"
+		"product1page4 product1page4"
+		"product2page4 product2page4"
+		"product3page4 product3page4"
+	}
+	/*eusolar.html*/	
+	#grid_container_page3{
+		display: grid;
+		grid-template-columns: auto auto;
+		grid-gap: 10px;
+		grid-template-areas:
+		"table table "
+		"table table "
+		"table table "
+		"table table "
+		"copy . "
+		"text . "
+		"product1page3 . "
+		"product2page3 . "
+	"product3page3 . "}	
+	
+	.tablet { 
+	display: none;}	
+	.mobile { 
+	display: none;}
+	
+	/*howsolarworks.html*/
+	#grid_container_page2{
+		display: grid;
+		grid-template-columns:auto auto;
+		grid-gap: 10px;
+		grid-template-areas:
+		"article5 article5"
+		"article3 article3"
+		"article2 article2"
+		"article1 article1"
+		"text text"
+		"product1page2 product1page2"
+		"product2page2 product2page2"
+		"product3page2 product3page2"
+	}
+	.article6 { 
+	display: none;}	
+	.article4 { 
+	display: none;}	
+	
+	/*home page*/ 
+	
+	.section_product {
+        order: 2;
+        padding-left: 80px;
+	} 
+	.figure {
+        width: 50%;
+        padding-bottom: 10px;
+	}
+    section  section article p {
+        max-width: 100%;
+        width: 90%;
+        vertical-align: middle;
+	}
+    section section aside p {
+        max-width: 100%;
+        width: 70%;
+	}
+	
+	#article_home1{
+		order: 2;
+	}
+	#article_home2{
+		order: 1;
+	}
+	#article_home3{
+		order: 0;
+		
+	}
+	.article_image {
+        float: center;
+        margin-top: 0px;
+        height: 200px;
+        width: 250px;		
+	}
+	
+	.5redenen {
+        order: 0;
+        width: 100%;
+		
+	}
+	video {
+		display: none;
+	}
+}

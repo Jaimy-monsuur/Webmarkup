@@ -138,10 +138,9 @@ footer .cookiestatement{
 section header{
 	text-align: left;
 }
-.5redenen {
+.redenen {
 	width: 30%;
 	float: left;
-
 }
 
 /*howsolarworks.html*/
@@ -408,7 +407,7 @@ height: 250px;}
 	video {
         order: 1;
 	}
-	.5redenen {
+	.redenen {
         order: 0;
         width: 100%;
         padding-left: 100px;
@@ -423,9 +422,9 @@ height: 250px;}
 		text-align: right;
 		padding: 20px;
 		font-size: 50px;
-		vertical-align: ;
-		
+		vertical-align:top ;		
 	}
+	
 	.navlabel {
 	visibility:visible;}
 	
@@ -445,7 +444,7 @@ height: 250px;}
 	}
     .nav a {
         display: block;
-        hight: 50px;
+        height: 50px;
 	}
     .nav li {
         float: unset;
@@ -554,13 +553,12 @@ height: 250px;}
 		
 	}
 	.article_image {
-        float: center;
         margin-top: 0px;
         height: 200px;
         width: 250px;		
 	}
 	
-	.5redenen {
+	.redenen {
         order: 0;
         width: 100%;
 		
